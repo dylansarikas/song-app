@@ -1,0 +1,34 @@
+###Songs Index
+
+GET http://localhost:3000/songs
+
+###Songs Create
+
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "Semi-Charmed Life",
+  "album": "Third Eye Blind",
+  "artist": "Third Eye Blind",
+  "year": 1997
+}
+
+###Songs Show
+
+GET http://localhost:3000/songs/2
+
+###Songs Update
+
+PATCH http://localhost:3000/songs/5
+Content-Type: application/json
+
+{
+  "album": "Self Titled"
+}
+
+###Songs Delete
+
+DELETE http://localhost:3000/songs/5
+
+
